@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+  overflow: hidden;
+}
+html .container,
+body .container {
+  height: 100%;
+}
+html .container .header,
+body .container .header {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  background-color: #354457;
+  color: #b3bcc5;
+}
+html .container .header .logo,
+body .container .header .logo {
+  position: absolute;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0 auto 20px;
+}
+html .container .header .logo img,
+body .container .header .logo img {
+  height: 30px;
+  width: 30px;
+}
+html .container .header .logo span,
+body .container .header .logo span {
+  vertical-align: top;
+  line-height: 30px;
+}
+html .container .content,
+body .container .content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+html .container .content .menu,
+body .container .content .menu {
+  background-color: #4d5e70;
+  color: #b3Bcc5;
+}
+html .container .content .menu dt,
+body .container .content .menu dt,
+html .container .content .menu dd,
+body .container .content .menu dd {
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+html .container .content .menu dt,
+body .container .content .menu dt {
+  font-weight: bold;
+  padding-left: 8px;
+}
+html .container .content .menu dd,
+body .container .content .menu dd {
+  padding-left: 30px;
+}
+html .container .content .menu dd:hover,
+body .container .content .menu dd:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #354457;
+}
+html .container .content .menu dd.active,
+body .container .content .menu dd.active {
+  background-color: #ddd;
+  color: #354457;
+}
+html .container .content .main-content,
+body .container .content .main-content {
+  position: relative;
+  height: 100%;
+}
+html .container .content .main-content .none,
+body .container .content .main-content .none {
+  display: none;
+}
+html .container .content .main-content .student-list,
+body .container .content .main-content .student-list {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+html .container .content .main-content .student-list .student-table,
+body .container .content .main-content .student-list .student-table {
+  position: absolute;
+  width: 100%;
+}
+html .container .content .main-content .student-list .student-table th,
+body .container .content .main-content .student-list .student-table th,
+html .container .content .main-content .student-list .student-table td,
+body .container .content .main-content .student-list .student-table td {
+  height: 30px;
+  min-width: 100px;
+  text-align: center;
+}
+html .container .content .main-content .student-list .student-table th,
+body .container .content .main-content .student-list .student-table th {
+  background-color: #e3e8ee;
+  color: #646987;
+}
+html .container .content .main-content .student-list .student-table td,
+body .container .content .main-content .student-list .student-table td {
+  background-color: #fff;
+  color: #111;
+  font-size: 14px;
+}
+html .container .content .main-content .student-list .student-table .make,
+body .container .content .main-content .student-list .student-table .make {
+  min-width: 150px;
+}
+html .container .content .main-content .student-list .student-table .make span,
+body .container .content .main-content .student-list .student-table .make span {
+  display: inline-block;
+  height: 24px;
+  width: 60px;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+html .container .content .main-content .student-list .student-table .make .modify,
+body .container .content .main-content .student-list .student-table .make .modify {
+  background-color: #5cb85c;
+}
+html .container .content .main-content .student-list .student-table .make .delete,
+body .container .content .main-content .student-list .student-table .make .delete {
+  background-color: #d9534f;
+  margin-left: 15px;
+}
+html .container .content .main-content .student-list .modify-student,
+body .container .content .main-content .student-list .modify-student {
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 200px);
+  left: -200px;
+}
+html .container .content .main-content .student-list .modify-student .mask,
+body .container .content .main-content .student-list .modify-student .mask {
+  height: 100%;
+  wdith: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html .container .content .main-content .student-list .modify-student .mask .title,
+body .container .content .main-content .student-list .modify-student .mask .title {
+  color: #b3bcc5;
+}
+html .container .content .main-content .student-list .modify-student .mask .dialog,
+body .container .content .main-content .student-list .modify-student .mask .dialog {
+  position: absolute;
+  padding: 15px;
+  height: 400px;
+  width: 400px;
+  left: 0;
+  right: 0;
+  margin: 100px auto;
+  background-color: #fff;
+}
+html .container .content .main-content .add-student,
+body .container .content .main-content .add-student {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+html .container .content .main-content form,
+body .container .content .main-content form {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  margin: 30px auto;
+  text-align: center;
+}
+html .container .content .main-content form p,
+body .container .content .main-content form p {
+  display: inline-block;
+  padding: 5px;
+  text-align: initial;
+  width: 300px;
+}
+html .container .content .main-content form p label,
+body .container .content .main-content form p label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 8px;
+  vertical-align: bottom;
+}
+html .container .content .main-content form p .btn,
+body .container .content .main-content form p .btn {
+  height: 30px;
+  width: 80px;
+  margin-left: 3px;
+}

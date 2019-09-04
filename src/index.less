@@ -1,0 +1,173 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html,body{
+  height: 100%;
+  background-color: #eee;
+  overflow: hidden;
+  .container{
+    height: 100%;
+    .header {
+      position: absolute;
+      height: 70px;
+      width: 100%;
+      background-color: #354457;
+      color: #b3bcc5;
+      .logo{
+        position: absolute;
+        height: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0 auto 20px;
+        img{
+          height: 30px;
+          width: 30px;
+        }
+        span{
+          vertical-align: top;
+          line-height: 30px;
+        }
+      }
+    }
+    .content{
+      height: 100%;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      padding-top: 70px;
+      box-sizing: border-box;
+      .menu{
+        background-color: #4d5e70;
+        color: #b3Bcc5;
+        dt,dd{
+          height: 40px;
+          line-height: 40px;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+        dt{
+          font-weight: bold;
+          padding-left: 8px;
+        }
+        dd{
+          padding-left: 30px;
+          &:hover{
+            background-color: rgba(255, 255, 255, .5);
+            color: #354457;
+          }
+        }
+        dd.active{
+          background-color: #ddd;
+          color: #354457;
+        }
+      }
+      .main-content{
+        position: relative;
+        height: 100%;
+        .none{
+          display: none;
+        }
+        .student-list{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          .student-table{
+            position: absolute;
+            width: 100%;
+            th, td{
+              height: 30px;
+              min-width: 100px;
+              text-align: center;
+            }
+            th{
+              background-color: #e3e8ee;
+              color: #646987;
+            }
+            td{
+              background-color: #fff;
+              color: #111;
+              font-size: 14px;
+            }
+            .make{
+              min-width: 150px;
+              span{
+                display: inline-block;
+                height: 24px;
+                width: 60px;
+                color: #fff;
+                line-height: 24px;
+                text-align: center;
+                border-radius: 10px;
+                cursor: pointer;
+              }
+              .modify{
+                background-color: #5cb85c;
+              }
+              .delete{
+                background-color: #d9534f;
+                margin-left: 15px;
+              }
+            }
+          }
+          .modify-student{
+            position: absolute;
+            height: 100%;
+            width: calc(100% + 200px);
+            left: -200px;
+            .mask{
+              height: 100%;
+              wdith: 100%;
+              background-color: rgba(0, 0, 0, .5);
+              .title{
+                color: #b3bcc5;
+              }
+              .dialog{
+                position: absolute;
+                padding: 15px;
+                height: 400px;
+                width: 400px;
+                left: 0;
+                right: 0;
+                margin: 100px auto;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+        .add-student{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+        form{
+          position: absolute;
+          width: 400px;
+          height: 300px;
+          left: 0;
+          right: 0;
+          margin: 30px auto;
+          text-align: center;
+          p{
+            display: inline-block;
+            padding: 5px;
+            text-align: initial;
+            width: 300px;
+            label{
+              display: inline-block;
+              width: 80px;
+              text-align: right;
+              margin-right: 8px;
+              vertical-align: bottom;
+            }
+            .btn{
+              height: 30px;
+              width: 80px;
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
